@@ -7,8 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
-  },
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://shivajikale0908.github.io/Reactpagescrolling"
+  }
+,
   "dependencies": {
     "axios": "^1.7.9",
     "react": "^18.3.1",
@@ -28,6 +32,7 @@
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
-    "vite": "^6.0.1"
+    "vite": "^6.0.1",
+    "gh-pages": "^3.2.3"
   }
 }
